@@ -5,12 +5,6 @@ name: default
 trigger:
   branch:
   - master
-  event:
-    - custom
-    - push
-    - pull_request
-    - tag
-    - cron
   cron:
     - nightly
 steps:
