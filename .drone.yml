@@ -6,6 +6,7 @@ trigger:
   branch:
   - master
   event:
+    - custom
     - push
     - pull_request
     - tag
