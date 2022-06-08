@@ -1,0 +1,25 @@
+---
+kind: pipeline
+type: kubernetes
+name: default
+trigger:
+  branch:
+  - master
+  event:
+    - push
+    - pull_request
+    - tag
+    - cron
+  cron:
+    - nightly
+steps:
+- name: build & push docker image
+  image: plugins/docker
+  settings:
+    username: drone
+    password:
+      from_secret: cr_password
+    registry: cr.grechka.family
+    repo: cr.grechka.family/nextcloud
+    auto_tag: true
+    force_tag: true
