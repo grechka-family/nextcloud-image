@@ -2,11 +2,7 @@
 kind: pipeline
 type: kubernetes
 name: default
-trigger:
-  branch:
-  - master
-  cron:
-    - nightly
+
 steps:
 - name: build & push docker image
   image: plugins/docker
