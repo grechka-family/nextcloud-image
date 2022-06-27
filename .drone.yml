@@ -14,9 +14,3 @@ steps:
     repo: cr.grechka.family/nextcloud
     auto_tag: true
     force_tag: true
-trigger:
-  event:
-    include:
-    - cron
-  cron:
-  - weekly
