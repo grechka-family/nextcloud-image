@@ -10,10 +10,10 @@ steps:
     event:
     - tag
   settings:
-    username: drone
+    username: dgrechka
     password:
-      from_secret: cr_password
-    registry: cr.grechka.family
-    repo: cr.grechka.family/nextcloud
+      from_secret: dgrechka_ghcr_pat
+    repo: ghcr.io/grechka-family/nextcloud
+    registry: ghcr.io
     auto_tag: true
     force_tag: true
