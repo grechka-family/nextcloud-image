@@ -1,4 +1,4 @@
-FROM nextcloud:28.0.6
+FROM nextcloud:28.0.9
 
 RUN apt-get update && apt-get install -y \
     supervisor \
