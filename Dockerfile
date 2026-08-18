@@ -1,4 +1,4 @@
-FROM nextcloud:33.0.6
+FROM nextcloud:33.0.8
 RUN apt-get update && apt-get install -y \
     supervisor \
   && rm -rf /var/lib/apt/lists/* \
